@@ -1,3 +1,5 @@
+![alt text](https://raw.githubusercontent.com/gdg-el-paso/github-workshop-1/master/img/readme_image.png)
+
 # GDG El Paso GitHub Workshop 1 <br />
 
 ## Overview
