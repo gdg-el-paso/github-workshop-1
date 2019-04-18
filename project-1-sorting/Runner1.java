@@ -4,10 +4,12 @@
  * Purpose: To practice insertion sort and merge sort using arrays
  * Last Modified: 17 April 2019
  */
+import java.util.Random;
 
 public class Runner1 {
   public static void main(String[] args) {
-    // Demonstrate the code works by generating a random list of 20 boxes, printing the list before AND sorting using via insertion and merge sort.
+    // Demonstrate the code works by generating a random list of 20 boxes, printing
+    // the list before AND sorting using via insertion and merge sort.
     int numOfBoxes = 20;
 
     Box firstArray[] = arrayOfBoxes(numOfBoxes); // Create the array
@@ -49,16 +51,28 @@ public class Runner1 {
   public static Box[] arrayOfBoxes(int numOfBoxes) {
 
     // Your Code here
-
-    return null;
+    Box[] boxes = new Box[numOfBoxes];
+    Random rand = new Random();
+    for (int i = 0; i < numOfBoxes; i++) {
+      double L = 1 + (10 - 1) * rand.nextDouble();
+      double W = 1 + (10 - 1) * rand.nextDouble();
+      double H = 1 + (10 - 1) * rand.nextDouble();
+      boxes[i] = new Box(L, W, H);
+    }
+    return boxes;
   }
 
   /**
-   * Print the array of boxes. Each line should be the l,w,h && v of a specific box
+   * Print the array of boxes. Each line should be the l,w,h && v of a specific
+   * box
    */
   public static void printArrayOfBoxen(Box[] firstArray) {
-
     // Your Code here
+    for (int i = 0; i < firstArray.length; i++) {
+      System.out.println("Box " + i);
+      firstArray[i].print();
+      System.out.println();
+    }
   }
 
   /** Create a new array of boxes with identical values of the given one */
