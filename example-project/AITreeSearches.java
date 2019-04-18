@@ -104,6 +104,7 @@ public class AITreeSearches {
 		breadth_first_search(map_space);
 		iterative_deepening_search(map_space);
 		a_star_search(map_space);
+		//
 	}
 
 	/**
