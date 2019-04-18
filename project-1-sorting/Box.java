@@ -25,4 +25,10 @@ public class Box {
   public double calculateVolume() {
     return (length * width * height);
   }
+
+  public void print() {
+    System.out.println("Length: " + length);
+    System.out.println("Width: " + width);
+    System.out.println("Height: " + height);
+  }
 }
